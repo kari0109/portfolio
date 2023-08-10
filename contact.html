@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebBrains' Portfolio</title>
+    <title>Contact WebBrains</title>
     <link rel="icon" type="image/x-icon" href="./images/Skele.png">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menu -->
+    
+    <link rel="stylesheet" href="./css/menu.css">
 </head>
+
 <body>
-    <header>
+    <!-- The menu -->
+    <nav id="menu" class="menu">
+        <header>WebBrains Portfolio</header>
         <a href="./index.html">Home</a>
-        <a href="./gallery.html">Gallery</a>
+        <section>
+            <h3>Gallery</h3>
+            <ul>
+                <li><a href="./photos.html">Photos</a></li>
+                <li><a href="./videos.html">Videos</a></li>
+                <li><a href="./art.html">Artwork</a></li>
+            </ul>
+        </section>
         <a href="./contact.html">Contact</a>
-    </header>
-    <div>
-        <p>Meet WebBrains</p>
-    </div>
-    <footer>Hiruth S Kariyawasam © 2023</footer>
+    </nav>
+
+    <main id="panel" class="panel">
+        <button class="toggle-button">☰</button>
+        <div>
+            <h2>Meet WebBrains</h2>
+            <p></p>
+        </div>
+
+        <footer>Hiruth S Kariyawasam © 2023</footer>
+    </main>
+    <script src="./js/slideout.min.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
+
 </html>

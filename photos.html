@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBrains' Photos</title>
+    <link rel="icon" type="image/x-icon" href="./images/Skele.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menu -->
+    
+    <link rel="stylesheet" href="./css/menu.css">
+
+    
+</head>
+
+<body>
+    <!-- The menu -->
+    <nav id="menu" class="menu">
+        <header>WebBrains Portfolio</header>
+        <a href="./index.html">Home</a>
+        <section>
+            <h3>Gallery</h3>
+            <ul>
+                <li><a href="./photos.html">Photos</a></li>
+                <li><a href="./videos.html">Videos</a></li>
+                <li><a href="./art.html">Artwork</a></li>
+            </ul>
+        </section>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <main id="panel" class="panel">
+        <button class="toggle-button">☰</button>
+        <div>
+            <h2>Meet WebBrains</h2>
+            <p></p>
+        </div>
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            ...
+          </div>
+
+        <footer>Hiruth S Kariyawasam © 2023</footer>
+    </main>
+    <script src="./js/slideout.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+</body>
+
+</html>
