@@ -6,16 +6,37 @@
     <title>WebBrains' Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./images/Skele.png">
     <link rel="stylesheet" href="./main.css">
+    <link href="./mmenu.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <a href="./index.html">Home</a>
-        <a href="./gallery.html">Gallery</a>
-        <a href="./contact.html">Contact</a>
-    </header>
+    <div id="page">
+        <div id="header"></div>
+        <div id="content">
+            <h1>THis is a demo</h1>
+            <p>Click the menu icon to open the menu</p>
+        </div>
+    </div>
+    <nav id="menu">
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+            <ul>
+                <li><a href="./photos.html">Photos</a></li>
+                <li><a href="./videos.html">Videos</a></li>
+                <li><a href="./art.html">Artwork</a></li>
+            </ul>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+        
+        
+        
+    
+    </nav>
     <div>
-        <p>Meet WebBrains</p>
+        <h2>Meet WebBrains</h2>
+        <p></p>
     </div>
     <footer>Hiruth S Kariyawasam © 2023</footer>
+    <script src="./mmenu.js"></script>
 </body>
 </html>
