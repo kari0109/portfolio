@@ -2,40 +2,65 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./css/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebBrains' Art</title>
     <link rel="icon" type="image/x-icon" href="./images/Skele.png">
-    <link rel="stylesheet" href="./css/main.css">
+    
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- menu -->
 
-    <link rel="stylesheet" href="./css/menu.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <!-- The menu -->
-    <nav id="menu" class="menu">
-        <header>WebBrains Portfolio</header>
-        <a href="./index.html">Home</a>
-        <section>
-            <h3>Gallery</h3>
-            <ul>
-                <li><a href="./photos.html">Photos</a></li>
-                <li><a href="./videos.html">Videos</a></li>
-                <li><a href="./art.html">Artwork</a></li>
-            </ul>
-        </section>
-        <a href="./contact.html">Contact</a>
-    </nav>
+    <main>
+        <!-- The menu -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/Skele.png" width="44" height="44" class="d-inline-block align-top"
+                    alt="webbrains logo">
+                WebBrains
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <main id="panel" class="panel">
-        <button class="toggle-button">☰</button>
-        <div>
-            <h2>Meet WebBrains</h2>
-            <p></p>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./photos.html">Photos</a>
+                            <a class="dropdown-item" href="./videos.html">Videos</a>
+                            <a class="dropdown-item" href="./art.html">Artwork</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <header>
+                <h1>Artwork by WebBrains</h1>
+            </header>
         </div>
-        <div class="grid js-masonary" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+
+        <div class="grid js-masonary container-fluid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+
             <!-- pic 1 -->
             <div class="grid-item">
                 <picture class="pic">
@@ -54,6 +79,7 @@
                     <img class="orig-img" src="./images/art/Gogeta.png" alt="vector art of gogeta">
                 </picture>
             </div>
+
             <!-- pic 2 -->
             <div class="grid-item">
                 <picture class="pic">
@@ -66,15 +92,17 @@
                     <source srcset="./images/art/lkakashil-720.png,
                 ./images/art/lkakashil-1440.png 2x,
                 ./images/art/lkakashil-2160.png 3x" media="(max-width: 720px)" />
-                <source srcset="./images/art/lkakashil-960.png,
+                    <source srcset="./images/art/lkakashil-960.png,
                 ./images/art/lkakashil-1920.png 2x,
                 ./images/art/lkakashil-2880.png 3x" media="(max-width: 960px)" />
                     <img class="orig-img" src="./images/art/lkakashil.png" alt="art of TR's art/lkakashil">
                 </picture>
             </div>
+
             <!-- pic 3 -->
-            <picture class="pic">
-                <div class="grid-item">
+            <div class="grid-item">
+                <picture class="pic">
+
                     <source srcset="./images/art/skele-320.png,
             ./images/art/skele-640.png 2x,
             ./images/art/skele-960.png 3x" media="(max-width: 320px)" />
@@ -88,33 +116,68 @@
                 ./images/art/skele-1920.png 2x,
                 ./images/art/skele-2880.png 3x" media="(max-width: 960px)" />
                     <img class="orig-img" src="./images/art/Skele.png" alt="art of skele">
-            </picture>
-        </div>
-        <!-- pic 4 -->
-        <div class="grid-item grid-item--width2">
-            <picture class="pic">
-                <source srcset="./images/art/SkullAssassin2-320.png,
+                </picture>
+            </div>
+
+            <!-- pic 4 -->
+            <div class="grid-item grid-item--width2">
+                <picture class="pic">
+                    <source srcset="./images/art/SkullAssassin2-320.png,
             ./images/art/SkullAssassin2-640.png 2x,
             ./images/art/SkullAssassin2-960.png 3x" media="(max-width: 320px)" />
-                <source srcset="./images/art/SkullAssassin2-480.png,
+                    <source srcset="./images/art/SkullAssassin2-480.png,
                 ./images/art/SkullAssassin2-960.png 2x,
                 ./images/art/SkullAssassin2-1440.png 3x" media="(max-width: 480px)" />
-                <source srcset="./images/art/SkullAssassin2-720.png,
+                    <source srcset="./images/art/SkullAssassin2-720.png,
                 ./images/art/SkullAssassin2-1440.png 2x,
                 ./images/art/SkullAssassin2-2160.png 3x" media="(max-width: 720px)" />
-                <source srcset="./images/art/SkullAssassin2-960.png,
+                    <source srcset="./images/art/SkullAssassin2-960.png,
                 ./images/art/SkullAssassin2-1920.png 2x,
                 ./images/art/SkullAssassin2-2880.png 3x" media="(max-width: 960px)" />
-                <img class="orig-img" src="./images/art/SkullAssassin2.png" alt="art of the skull assassin">
-            </picture>
+                    <img class="orig-img" src="./images/art/SkullAssassin2.png" alt="art of the skull assassin">
+                </picture>
+            </div>
+
         </div>
-        </div>
-        <footer>Hiruth S Kariyawasam © 2023</footer>
+        <!-- Footer -->
+        <footer class="footer bg-dark text-center text-white">
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/WebBrains69"
+                        role="button">
+                        <i class="fa fa-brands fa-facebook"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/webmyhead/"
+                        role="button">
+                        <i class="fa fa-brands fa-instagram"></i>
+                    </a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fa fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                        <i class="fa fa-brands fa-github"></i>
+                    </a>
+                </section>
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="text-center container-fluid" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright : Hiruth S Kariyawasam
+            </div>
+        </footer>
     </main>
-    <script src="./js/slideout.min.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="./js/layout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
